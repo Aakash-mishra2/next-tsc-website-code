@@ -1,0 +1,33 @@
+.sparkles > span {
+  animation: sparkling 1s ease-in-out infinite alternate;
+}
+
+.sparkles span svg path {
+  fill: white !important;
+}
+
+.sparkles > span:nth-child(1) {
+  animation-delay: 500ms;
+}
+.sparkles > span:nth-child(2) {
+  animation-delay: 500ms;
+}
+.sparkles > span:nth-child(3) {
+  animation-delay: 1500ms;
+}
+.sparkles > span:nth-child(4) {
+  animation-delay: 2000ms;
+}
+.sparkles > span:nth-child(5) {
+  animation-delay: 2500ms;
+}
+
+@keyframes sparkling {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
